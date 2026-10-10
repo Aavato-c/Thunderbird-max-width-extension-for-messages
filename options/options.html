@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading Width for Thunderbird</title>
+    <link rel="stylesheet" href="options.css">
+    <script src="options.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Reading width</h1>
+      <form id="settings-form">
+        <label for="reading-width">Maximum message width</label>
+        <div class="width-control">
+          <input id="reading-width" name="reading-width" type="number" min="30" max="120" step="1" required>
+          <span>ch</span>
+        </div>
+        <p>Use a value from 30 to 120. The default is 60.</p>
+        <button type="submit">Save</button>
+        <span id="save-status" role="status" aria-live="polite"></span>
+      </form>
+    </main>
+  </body>
+</html>
